@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32EEE062A714C15006C4CF5 /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EEE052A714C15006C4CF5 /* ExchangeInfo.swift */; };
 		D33BE6D02A705EB50042678C /* Finance_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33BE6CF2A705EB50042678C /* Finance_AppApp.swift */; };
 		D33BE6D22A705EB50042678C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33BE6D12A705EB50042678C /* ContentView.swift */; };
 		D33BE6D42A705EB60042678C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33BE6D32A705EB60042678C /* Assets.xcassets */; };
 		D33BE6D72A705EB60042678C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33BE6D62A705EB60042678C /* Preview Assets.xcassets */; };
+		D36AE6CF2A71F7D3007B7CEE /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36AE6CE2A71F7D3007B7CEE /* ExchangeRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D32EEE052A714C15006C4CF5 /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
 		D33BE6CC2A705EB50042678C /* Finance App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finance App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33BE6CF2A705EB50042678C /* Finance_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance_AppApp.swift; sourceTree = "<group>"; };
 		D33BE6D12A705EB50042678C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D33BE6D32A705EB60042678C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D33BE6D62A705EB60042678C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D36AE6CE2A71F7D3007B7CEE /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				D33BE6CF2A705EB50042678C /* Finance_AppApp.swift */,
 				D33BE6D12A705EB50042678C /* ContentView.swift */,
+				D32EEE052A714C15006C4CF5 /* ExchangeInfo.swift */,
+				D36AE6CE2A71F7D3007B7CEE /* ExchangeRate.swift */,
 				D33BE6D32A705EB60042678C /* Assets.xcassets */,
 				D33BE6D52A705EB60042678C /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36AE6CF2A71F7D3007B7CEE /* ExchangeRate.swift in Sources */,
+				D32EEE062A714C15006C4CF5 /* ExchangeInfo.swift in Sources */,
 				D33BE6D22A705EB50042678C /* ContentView.swift in Sources */,
 				D33BE6D02A705EB50042678C /* Finance_AppApp.swift in Sources */,
 			);
