@@ -11,6 +11,10 @@ struct ContentView: View {
     
     @State var leftAmount = ""
     @State var rightAmount = ""
+    @State var leftCurrency: Currency = .silverPiece
+    @State var rightCurrency: Currency = .goldPiece
+    @State var showSelectedCurrency = false
+    @State var showExchangeInfo = false
     
     var body: some View {
         ZStack{
@@ -36,16 +40,24 @@ struct ContentView: View {
                         
                         HStack{
                             //Currency Image
-                            Image("silverpiece")
+                            Image(CurrencyImage.allCases[Currency.allCases.firstIndex(of: leftCurrency)!].rawValue)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 33)
                             //Currency text
-                            Text("Silver piece")
+                            Text(CurrencyText.allCases[Currency.allCases.firstIndex(of: leftCurrency)!].rawValue)
                                 .font(.headline)
                                 .foregroundColor(.white)
                         }
                         .padding(.bottom, -5)
+                        .onTapGesture {
+                            // Display currency selection screen
+                            showSelectedCurrency.toggle() // Toggle the state of the variable
+                        }
+                        .sheet(isPresented: $showSelectedCurrency) {
+                            // Display currency selection screen
+                            SelectCurrency(leftCurrency: $leftCurrency, rightCurrency: $rightCurrency)
+                        }
                         
                         //Text field
                         TextField("Amount", text: $leftAmount)
@@ -65,17 +77,25 @@ struct ContentView: View {
                         
                         HStack{
                             //Currency text
-                            Text("Gold Piece")
+                            Text(CurrencyText.allCases[Currency.allCases.firstIndex(of: rightCurrency)!].rawValue)
                                 .font(.headline)
                                 .foregroundColor(.white)
                             
                             //Currency Image
-                            Image("goldpiece")
+                            Image(CurrencyImage.allCases[Currency.allCases.firstIndex(of: rightCurrency)!].rawValue)
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 33)
                         }
                         .padding(.bottom, -5)
+                        .onTapGesture {
+                            // Display currency selection screen
+                            showSelectedCurrency.toggle() // Toggle the state of the variable
+                        }
+                        .sheet(isPresented: $showSelectedCurrency) {
+                            // Display currency selection screen
+                            SelectCurrency(leftCurrency: $leftCurrency, rightCurrency: $rightCurrency)
+                        }
                         
                         //Text field
                         TextField("Amount", text: $rightAmount)
@@ -97,12 +117,17 @@ struct ContentView: View {
                     
                     Button {
                         // Display exchange info screen
+                        showExchangeInfo.toggle() //toggle exchange info
                     } label: {
                         Image(systemName: "info.circle.fill")
                     }
                     .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding(.trailing)
+                    .foregroundColor(.white)
+                    .padding(.trailing)
+                    .sheet(isPresented: $showExchangeInfo){
+                        //show exchange info page
+                        ExchangeInfo();
+                    }
                 }
             }
         }
