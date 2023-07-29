@@ -15,6 +15,7 @@
 		D36AE6CF2A71F7D3007B7CEE /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36AE6CE2A71F7D3007B7CEE /* ExchangeRate.swift */; };
 		D36AE6D12A72039B007B7CEE /* SelectCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36AE6D02A72039B007B7CEE /* SelectCurrency.swift */; };
 		D36AE6D32A7205A5007B7CEE /* CurrencyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36AE6D22A7205A5007B7CEE /* CurrencyIcon.swift */; };
+		D379934D2A75D0970095B42F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379934C2A75D0970095B42F /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		D36AE6CE2A71F7D3007B7CEE /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
 		D36AE6D02A72039B007B7CEE /* SelectCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrency.swift; sourceTree = "<group>"; };
 		D36AE6D22A7205A5007B7CEE /* CurrencyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyIcon.swift; sourceTree = "<group>"; };
+		D379934C2A75D0970095B42F /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				D33BE6CF2A705EB50042678C /* Finance_AppApp.swift */,
+				D379934C2A75D0970095B42F /* Currency.swift */,
 				D33BE6D12A705EB50042678C /* ContentView.swift */,
 				D32EEE052A714C15006C4CF5 /* ExchangeInfo.swift */,
 				D36AE6D02A72039B007B7CEE /* SelectCurrency.swift */,
@@ -154,6 +157,7 @@
 				D32EEE062A714C15006C4CF5 /* ExchangeInfo.swift in Sources */,
 				D33BE6D22A705EB50042678C /* ContentView.swift in Sources */,
 				D33BE6D02A705EB50042678C /* Finance_AppApp.swift in Sources */,
+				D379934D2A75D0970095B42F /* Currency.swift in Sources */,
 				D36AE6D32A7205A5007B7CEE /* CurrencyIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,7 @@ struct SelectCurrency: View {
                 .edgesIgnoringSafeArea(.all)
                 .background(.brown)
             
+            
             VStack{
                 //text
                 Text("Select the currency you are starting with:")
